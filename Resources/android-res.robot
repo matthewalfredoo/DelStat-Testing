@@ -5,6 +5,8 @@ Resource    android-res-auth-activities-elements.robot
 Resource    android-res-home-activity-elements.robot
 Resource    android-res-materi-activities-elements.robot
 Resource    android-res-literatur-activities-elements.robot
+Resource    android-res-analisis-activities-elements.robot
+Resource    android-res-chat-activities-elements.robot
 
 *** Variables ***
 # -- Test Variables -- #
@@ -34,6 +36,14 @@ ${ELEMENT_BUTTON_LOGOUT_FRAGMENT_PROFIL}        id=id.del.ac.delstat:id/button_l
 &{TAHUN_LITERATUR}      tahun=2020  tahun2=2021
 &{TAG_LITERATUR}        tag=mahasiswa
 &{FILE_LITERATUR}       file=
+
+#Analisis data Inputs
+&{JUDUL_ANALISIS}       judul=Analisis Statistik Data Penduduk
+&{DESKRIPSI_ANALISIS}   deskripsi=Tolong bantu saya untuk melakukan analisis terhadap data penduduk pada file berikut
+&{FILE_ANALISIS}        file=
+
+#Chat Input
+&{ISI_CHAT}             isi=Mohon maaf mengganggu waktunya
 
 *** Keywords ***
 OpenDelStatApplication
@@ -223,7 +233,7 @@ EditLiteratur
     Click Element                       ${ELEMENT_ICON_EDIT_LITERATUR_ACTIVITY}
 
     Wait Until Page Contains Element    ${ELEMENT_JUDUL_LITERATUR_ACTIVITY}
-    Input Text    ${ELEMENT_TAHUN_LITERATUR_ACTIVITY}       ${TAHUN_LITERATUR}[tahun2]
+    Input Text                          ${ELEMENT_TAHUN_LITERATUR_ACTIVITY}       ${TAHUN_LITERATUR}[tahun2]
     Click Element                       ${ELEMENT_BUTTON_EDIT_LITERATUR_ACTIVITY}
 
  DeleteLiteratur
@@ -247,4 +257,67 @@ EditLiteratur
 
     Wait Until Page Contains Element    ${ELEMENT_BUTTON_YES_LITERATUR_ACTIVITY}
     Click Element                       ${ELEMENT_BUTTON_YES_LITERATUR_ACTIVITY}
+    
+ ViewAnalisis1
+    OpenFragmentProfil
 
+    Wait Until Page Contains Element    ${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}
+    Click Element                       ${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}
+
+    Wait Until Page Contains Element    ${ELEMENT_EMAIL_LOGIN_ACTIVITY}
+    Input Text                          ${ELEMENT_EMAIL_LOGIN_ACTIVITY}    ${USER_DOSEN_1}[email]
+    Input Password                      ${ELEMENT_PASSWORD_LOGIN_ACTIVITY}  ${USER_DOSEN_1}[password]
+    Click Element                       ${ELEMENT_BUTTON_LOGIN_LOGIN_ACTIVITY}
+    
+    Wait Until Page Contains Element    ${ELEMENT_ACTION_BAR_ANALISIS_DATA}
+    Click Element                       ${ELEMENT_ACTION_BAR_ANALISIS_DATA}
+    
+    Wait Until Page Contains Element    ${ELEMENT_ANALISIS1_ACTIVITY}
+    Click Element                       ${ELEMENT_ANALISIS1_ACTIVITY}
+ 
+ RequestAnalisis
+    OpenFragmentProfil
+
+    Wait Until Page Contains Element    ${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}
+    Click Element                       ${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}
+    
+    Wait Until Page Contains Element    ${ELEMENT_EMAIL_LOGIN_ACTIVITY}
+    Input Text                          ${ELEMENT_EMAIL_LOGIN_ACTIVITY}    ${USER_SISWA_1}[email]
+    Input Password                      ${ELEMENT_PASSWORD_LOGIN_ACTIVITY}  ${USER_SISWA_1}[password]
+    Click Element                       ${ELEMENT_BUTTON_LOGIN_LOGIN_ACTIVITY}
+    
+    Wait Until Page Contains Element    ${ELEMENT_ACTION_BAR_ANALISIS_DATA}
+    Click Element                       ${ELEMENT_ACTION_BAR_ANALISIS_DATA}
+    
+    Wait Until Page Contains Element    ${ELEMENT_BUTTON_REQUEST_ANALISIS_ACTIVITY}
+    Click Element                       ${ELEMENT_BUTTON_REQUEST_ANALISIS_ACTIVITY}
+    
+    Wait Until Page Contains Element    ${ELEMENT_JUDUL_ANALISIS_ACTIVITY}
+    Input Text    ${ELEMENT_JUDUL_ANALISIS_ACTIVITY}    ${JUDUL_ANALISIS}[judul]
+    Input Text    ${ELEMENT_DESKRIPSI_ANALISIS_ACTIVITY}    ${DESKRIPSI_ANALISIS}[deskripsi]
+    Input Text    ${ELEMENT_FILE_ANALISIS_ACTIVITY}    ${FILE_ANALISIS}[file]
+    Click Element    ${ELEMENT_BUTTON_SUBMIT_ANALISIS_ACTIVITY}
+
+ StartNewChatToDosen
+    OpenFragmentProfil
+
+    Wait Until Page Contains Element    ${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}
+    Click Element                       ${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}
+
+    Wait Until Page Contains Element    ${ELEMENT_EMAIL_LOGIN_ACTIVITY}
+    Input Text                          ${ELEMENT_EMAIL_LOGIN_ACTIVITY}    ${USER_SISWA_1}[email]
+    Input Password                      ${ELEMENT_PASSWORD_LOGIN_ACTIVITY}  ${USER_SISWA_1}[password]
+    Click Element                       ${ELEMENT_BUTTON_LOGIN_LOGIN_ACTIVITY}
+
+    Wait Until Page Contains Element    ${ELEMENT_ACTION_BAR_CHAT}
+    Click Element                       ${ELEMENT_ACTION_BAR_CHAT}
+
+    Wait Until Page Contains Element    ${ELEMENT_BUTTON_NEW_CHAT_ACTIVITY}
+    Click Element                       ${ELEMENT_BUTTON_NEW_CHAT_ACTIVITY}
+
+    Wait Until Page Contains Element    ${ELEMENT_DOSEN1_CHAT_ACTIVITY}
+    Click Element                       ${ELEMENT_DOSEN1_CHAT_ACTIVITY}
+
+    Wait Until Page Contains Element    ${ELEMENT_CHATBOX_CHAT_ACTIVITY}
+    Input Text    ${ELEMENT_CHATBOX_CHAT_ACTIVITY}    ${ISI_CHAT}[isi]
+    Click Element                       ${ELEMENT_BUTTON_KIRIM_CHAT_ACTIVITY}
