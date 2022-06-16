@@ -5,10 +5,18 @@ Resource   ../Resources/android-res.robot
 *** Variables ***
 
 *** Test Cases ***
-Register
+View
     OpenDelStatApplication
-    RegisterUser
+    ViewLiteratur1
 
-WrongRegister
+Create
     OpenDelStatApplication
-    WrongRegisterUser
+    CreateNewLiteratur
+
+Edit
+    OpenDelStatApplication
+    EditLiteratur
+
+Delete
+    OpenDelStatApplication
+    DeleteLiteratur

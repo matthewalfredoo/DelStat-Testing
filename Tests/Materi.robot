@@ -5,10 +5,10 @@ Resource   ../Resources/android-res.robot
 *** Variables ***
 
 *** Test Cases ***
-Register
+ViewMateri
     OpenDelStatApplication
-    RegisterUser
+    ViewMateri1
 
-WrongRegister
+EditVideoMateri
     OpenDelStatApplication
-    WrongRegisterUser
+    EditMateri
