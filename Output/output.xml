@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.0 on win32)" generated="20220615 22:27:45.489" rpa="false" schemaversion="3">
-<suite id="s1" name="Login" source="D:\Del\A-Kuliah\A-Semester4\Proyek Akhir II\Code\DelStat-Testing\Tests\Login.robot">
-<test id="s1-t1" name="Login" line="8">
+<robot generator="Robot 5.0.1 (Python 3.8.0 on win32)" generated="20220616 22:59:42.886" rpa="false" schemaversion="3">
+<suite id="s1" name="Literatur" source="D:\Del\A-Kuliah\A-Semester4\Proyek Akhir II\Code\DelStat-Testing\Tests\Literatur.robot">
+<test id="s1-t1" name="View" line="8">
 <kw name="OpenDelStatApplication" library="android-res">
-<msg timestamp="20220615 22:27:45.711" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220616 22:59:43.109" level="TRACE">Arguments: [  ]</msg>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>platformName=Android</arg>
@@ -17,185 +17,873 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<msg timestamp="20220615 22:27:45.711" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='emulator-5554' | appPackage='id.del.ac.delstat' | appActivity='id.del.ac.delstat.presentation.activity.HomeActivity' | automationName='Uiautomator2' ]</msg>
-<msg timestamp="20220615 22:27:47.758" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "id.del.ac.delstat", "appium:appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "emulator-5554", "appPackage": "id.del.ac.delstat", "appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "automationName": "Uiautomator2"}}</msg>
-<msg timestamp="20220615 22:27:47.759" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
-<msg timestamp="20220615 22:28:00.307" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 950</msg>
-<msg timestamp="20220615 22:28:00.307" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:00.310" level="DEBUG">Opened application with session id 5b8df3fa-b443-4718-b1cf-2618da7c69e8</msg>
-<msg timestamp="20220615 22:28:00.310" level="TRACE">Return: 1</msg>
-<status status="PASS" starttime="20220615 22:27:45.711" endtime="20220615 22:28:00.310"/>
+<msg timestamp="20220616 22:59:43.110" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='emulator-5554' | appPackage='id.del.ac.delstat' | appActivity='id.del.ac.delstat.presentation.activity.HomeActivity' | automationName='Uiautomator2' ]</msg>
+<msg timestamp="20220616 22:59:45.140" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "id.del.ac.delstat", "appium:appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "emulator-5554", "appPackage": "id.del.ac.delstat", "appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "automationName": "Uiautomator2"}}</msg>
+<msg timestamp="20220616 22:59:45.141" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20220616 22:59:53.230" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 950</msg>
+<msg timestamp="20220616 22:59:53.230" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 22:59:53.233" level="DEBUG">Opened application with session id bef1bba6-287e-48c3-ac69-3aeae054fd67</msg>
+<msg timestamp="20220616 22:59:53.233" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20220616 22:59:43.109" endtime="20220616 22:59:53.233"/>
 </kw>
-<msg timestamp="20220615 22:28:00.311" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:27:45.710" endtime="20220615 22:28:00.311"/>
+<msg timestamp="20220616 22:59:53.234" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 22:59:43.109" endtime="20220616 22:59:53.234"/>
 </kw>
-<kw name="LoginUsingUserSiswa1" library="android-res">
-<msg timestamp="20220615 22:28:00.312" level="TRACE">Arguments: [  ]</msg>
+<kw name="ViewLiteratur1" library="android-res">
+<msg timestamp="20220616 22:59:53.236" level="TRACE">Arguments: [  ]</msg>
+<kw name="OpenFragmentLiteratur" library="android-res">
+<msg timestamp="20220616 22:59:53.236" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_FRAGMEN_LITERATUR}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 22:59:53.237" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/literaturFragment' ]</msg>
+<msg timestamp="20220616 22:59:53.238" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 22:59:54.284" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 22:59:54.284" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 22:59:54.284" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 22:59:53.237" endtime="20220616 22:59:54.284"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_FRAGMEN_LITERATUR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 22:59:54.284" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/literaturFragment' ]</msg>
+<msg timestamp="20220616 22:59:54.285" level="INFO">Clicking element 'id=id.del.ac.delstat:id/literaturFragment'.</msg>
+<msg timestamp="20220616 22:59:54.286" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 22:59:54.333" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 22:59:54.333" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 22:59:54.333" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/element/00000000-0000-01f2-ffff-ffff0000004f/click {"id": "00000000-0000-01f2-ffff-ffff0000004f"}</msg>
+<msg timestamp="20220616 22:59:54.375" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/element/00000000-0000-01f2-ffff-ffff0000004f/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 22:59:54.375" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 22:59:54.375" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 22:59:54.284" endtime="20220616 22:59:54.375"/>
+</kw>
+<msg timestamp="20220616 22:59:54.375" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 22:59:53.236" endtime="20220616 22:59:54.375"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_LITERATUR1_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 22:59:54.375" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/judul_literatur' ]</msg>
+<msg timestamp="20220616 22:59:54.377" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements {"using": "id", "value": "id.del.ac.delstat:id/judul_literatur"}</msg>
+<msg timestamp="20220616 22:59:54.634" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 22:59:54.634" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 22:59:54.836" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements {"using": "id", "value": "id.del.ac.delstat:id/judul_literatur"}</msg>
+<msg timestamp="20220616 22:59:55.736" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 22:59:55.737" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 22:59:55.737" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 22:59:54.375" endtime="20220616 22:59:55.737"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_LITERATUR1_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 22:59:55.737" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/judul_literatur' ]</msg>
+<msg timestamp="20220616 22:59:55.739" level="INFO">Clicking element 'id=id.del.ac.delstat:id/judul_literatur'.</msg>
+<msg timestamp="20220616 22:59:55.739" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements {"using": "id", "value": "id.del.ac.delstat:id/judul_literatur"}</msg>
+<msg timestamp="20220616 22:59:55.768" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 22:59:55.769" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 22:59:55.769" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/element/00000000-0000-01f2-ffff-ffff00000084/click {"id": "00000000-0000-01f2-ffff-ffff00000084"}</msg>
+<msg timestamp="20220616 22:59:55.808" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/bef1bba6-287e-48c3-ac69-3aeae054fd67/element/00000000-0000-01f2-ffff-ffff00000084/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 22:59:55.808" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 22:59:55.809" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 22:59:55.737" endtime="20220616 22:59:55.809"/>
+</kw>
+<msg timestamp="20220616 22:59:55.809" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 22:59:53.235" endtime="20220616 22:59:55.809"/>
+</kw>
+<status status="PASS" starttime="20220616 22:59:43.108" endtime="20220616 22:59:55.810"/>
+</test>
+<test id="s1-t2" name="Create" line="12">
+<kw name="OpenDelStatApplication" library="android-res">
+<msg timestamp="20220616 22:59:55.812" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=id.del.ac.delstat</arg>
+<arg>appActivity=id.del.ac.delstat.presentation.activity.HomeActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20220616 22:59:55.813" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='emulator-5554' | appPackage='id.del.ac.delstat' | appActivity='id.del.ac.delstat.presentation.activity.HomeActivity' | automationName='Uiautomator2' ]</msg>
+<msg timestamp="20220616 22:59:57.869" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "id.del.ac.delstat", "appium:appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "emulator-5554", "appPackage": "id.del.ac.delstat", "appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "automationName": "Uiautomator2"}}</msg>
+<msg timestamp="20220616 22:59:57.869" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20220616 23:00:05.639" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 950</msg>
+<msg timestamp="20220616 23:00:05.639" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:05.644" level="DEBUG">Opened application with session id 5002469d-ce02-455e-a748-21dfd9518e63</msg>
+<msg timestamp="20220616 23:00:05.644" level="TRACE">Return: 2</msg>
+<status status="PASS" starttime="20220616 22:59:55.813" endtime="20220616 23:00:05.644"/>
+</kw>
+<msg timestamp="20220616 23:00:05.644" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 22:59:55.812" endtime="20220616 23:00:05.644"/>
+</kw>
+<kw name="CreateNewLiteratur" library="android-res">
+<msg timestamp="20220616 23:00:05.645" level="TRACE">Arguments: [  ]</msg>
 <kw name="OpenFragmentProfil" library="android-res">
-<msg timestamp="20220615 22:28:00.312" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220616 23:00:05.646" level="TRACE">Arguments: [  ]</msg>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${ELEMENT_FRAGMEN_PROFIL}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20220615 22:28:00.313" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/profileFragment' ]</msg>
-<msg timestamp="20220615 22:28:00.313" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/profileFragment"}</msg>
-<msg timestamp="20220615 22:28:01.384" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:01.385" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:01.385" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:00.312" endtime="20220615 22:28:01.385"/>
+<msg timestamp="20220616 23:00:05.646" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/profileFragment' ]</msg>
+<msg timestamp="20220616 23:00:05.646" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/profileFragment"}</msg>
+<msg timestamp="20220616 23:00:06.722" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:06.722" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:06.722" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:05.646" endtime="20220616 23:00:06.722"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${ELEMENT_FRAGMEN_PROFIL}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220615 22:28:01.385" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/profileFragment' ]</msg>
-<msg timestamp="20220615 22:28:01.387" level="INFO">Clicking element 'id=id.del.ac.delstat:id/profileFragment'.</msg>
-<msg timestamp="20220615 22:28:01.387" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/profileFragment"}</msg>
-<msg timestamp="20220615 22:28:01.446" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:01.446" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:01.447" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ad-ffff-ffff0000005d/click {"id": "00000000-0000-01ad-ffff-ffff0000005d"}</msg>
-<msg timestamp="20220615 22:28:01.500" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ad-ffff-ffff0000005d/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20220615 22:28:01.501" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:01.501" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:01.385" endtime="20220615 22:28:01.501"/>
+<msg timestamp="20220616 23:00:06.722" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/profileFragment' ]</msg>
+<msg timestamp="20220616 23:00:06.725" level="INFO">Clicking element 'id=id.del.ac.delstat:id/profileFragment'.</msg>
+<msg timestamp="20220616 23:00:06.725" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/profileFragment"}</msg>
+<msg timestamp="20220616 23:00:06.781" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:06.781" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:06.781" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-01ff-ffff-ffff0000005d/click {"id": "00000000-0000-01ff-ffff-ffff0000005d"}</msg>
+<msg timestamp="20220616 23:00:06.827" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-01ff-ffff-ffff0000005d/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:06.828" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:06.828" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:06.722" endtime="20220616 23:00:06.828"/>
 </kw>
-<msg timestamp="20220615 22:28:01.501" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:00.312" endtime="20220615 22:28:01.501"/>
+<msg timestamp="20220616 23:00:06.828" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:05.645" endtime="20220616 23:00:06.828"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20220615 22:28:01.501" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
-<msg timestamp="20220615 22:28:01.501" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
-<msg timestamp="20220615 22:28:01.749" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220615 22:28:01.749" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:01.963" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
-<msg timestamp="20220615 22:28:02.491" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:02.491" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:02.491" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:01.501" endtime="20220615 22:28:02.491"/>
+<msg timestamp="20220616 23:00:06.828" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
+<msg timestamp="20220616 23:00:06.829" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:07.038" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:07.038" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:07.240" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:07.744" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:07.745" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:07.745" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:06.828" endtime="20220616 23:00:07.745"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220615 22:28:02.492" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
-<msg timestamp="20220615 22:28:02.494" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_login'.</msg>
-<msg timestamp="20220615 22:28:02.494" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
-<msg timestamp="20220615 22:28:02.526" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:02.527" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:02.527" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ad-ffff-ffff00000074/click {"id": "00000000-0000-01ad-ffff-ffff00000074"}</msg>
-<msg timestamp="20220615 22:28:02.570" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ad-ffff-ffff00000074/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20220615 22:28:02.570" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:02.570" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:02.492" endtime="20220615 22:28:02.570"/>
+<msg timestamp="20220616 23:00:07.745" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
+<msg timestamp="20220616 23:00:07.747" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_login'.</msg>
+<msg timestamp="20220616 23:00:07.747" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:07.776" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:07.776" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:07.776" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-01ff-ffff-ffff00000074/click {"id": "00000000-0000-01ff-ffff-ffff00000074"}</msg>
+<msg timestamp="20220616 23:00:07.841" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-01ff-ffff-ffff00000074/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:07.841" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:07.841" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:07.745" endtime="20220616 23:00:07.841"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${ELEMENT_EMAIL_LOGIN_ACTIVITY}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20220615 22:28:02.571" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_email_login' ]</msg>
-<msg timestamp="20220615 22:28:02.571" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
-<msg timestamp="20220615 22:28:02.857" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220615 22:28:02.857" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:03.069" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
-<msg timestamp="20220615 22:28:03.572" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:03.572" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:03.572" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:02.571" endtime="20220615 22:28:03.572"/>
+<msg timestamp="20220616 23:00:07.842" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_email_login' ]</msg>
+<msg timestamp="20220616 23:00:07.842" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
+<msg timestamp="20220616 23:00:08.864" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:08.865" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:08.865" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:07.842" endtime="20220616 23:00:08.865"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${ELEMENT_EMAIL_LOGIN_ACTIVITY}</arg>
-<arg>${USER_SISWA_1}[email]</arg>
+<arg>${USER_DOSEN_1}[email]</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220615 22:28:03.572" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_email_login' | 'matthewwalfredoo@gmail.com' ]</msg>
-<msg timestamp="20220615 22:28:03.574" level="INFO">Typing text 'matthewwalfredoo@gmail.com' into text field 'id=id.del.ac.delstat:id/edit_text_email_login'</msg>
-<msg timestamp="20220615 22:28:03.574" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
-<msg timestamp="20220615 22:28:03.596" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:03.596" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:03.596" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ae-ffff-ffff000000a0/value {"text": "matthewwalfredoo@gmail.com", "value": ["m", "a", "t", "t", "h", "e", "w", "w", "a", "l", "f", "r", "e", "d", "o", "o", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "00000000-0000-01ae-ffff-ffff000000a0"}</msg>
-<msg timestamp="20220615 22:28:04.240" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ae-ffff-ffff000000a0/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20220615 22:28:04.240" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:04.240" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:03.572" endtime="20220615 22:28:04.240"/>
+<msg timestamp="20220616 23:00:08.865" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_email_login' | 'dosen1@gmail.com' ]</msg>
+<msg timestamp="20220616 23:00:08.869" level="INFO">Typing text 'dosen1@gmail.com' into text field 'id=id.del.ac.delstat:id/edit_text_email_login'</msg>
+<msg timestamp="20220616 23:00:08.870" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
+<msg timestamp="20220616 23:00:08.894" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:08.894" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:08.895" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0200-ffff-ffff000000a0/value {"text": "dosen1@gmail.com", "value": ["d", "o", "s", "e", "n", "1", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "00000000-0000-0200-ffff-ffff000000a0"}</msg>
+<msg timestamp="20220616 23:00:09.541" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0200-ffff-ffff000000a0/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:09.542" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:09.542" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:08.865" endtime="20220616 23:00:09.542"/>
 </kw>
 <kw name="Input Password" library="AppiumLibrary">
 <arg>${ELEMENT_PASSWORD_LOGIN_ACTIVITY}</arg>
-<arg>${USER_SISWA_1}[password]</arg>
+<arg>${USER_DOSEN_1}[password]</arg>
 <doc>Types the given password into text field identified by `locator`.</doc>
-<msg timestamp="20220615 22:28:04.241" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_password_login' | '12345678' ]</msg>
-<msg timestamp="20220615 22:28:04.243" level="INFO">Typing password into text field 'id=id.del.ac.delstat:id/edit_text_password_login'</msg>
-<msg timestamp="20220615 22:28:04.243" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_password_login"}</msg>
-<msg timestamp="20220615 22:28:04.756" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:04.756" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:04.756" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ae-ffff-ffff000000ae/value {"text": "12345678", "value": ["1", "2", "3", "4", "5", "6", "7", "8"], "id": "00000000-0000-01ae-ffff-ffff000000ae"}</msg>
-<msg timestamp="20220615 22:28:05.390" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ae-ffff-ffff000000ae/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20220615 22:28:05.390" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:05.390" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:04.241" endtime="20220615 22:28:05.390"/>
+<msg timestamp="20220616 23:00:09.543" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_password_login' | '12345678' ]</msg>
+<msg timestamp="20220616 23:00:09.545" level="INFO">Typing password into text field 'id=id.del.ac.delstat:id/edit_text_password_login'</msg>
+<msg timestamp="20220616 23:00:09.545" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_password_login"}</msg>
+<msg timestamp="20220616 23:00:10.059" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:10.059" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:10.060" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0200-ffff-ffff000000ae/value {"text": "12345678", "value": ["1", "2", "3", "4", "5", "6", "7", "8"], "id": "00000000-0000-0200-ffff-ffff000000ae"}</msg>
+<msg timestamp="20220616 23:00:10.129" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0200-ffff-ffff000000ae/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:10.129" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:10.129" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:09.542" endtime="20220616 23:00:10.129"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${ELEMENT_BUTTON_LOGIN_LOGIN_ACTIVITY}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220615 22:28:05.391" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
-<msg timestamp="20220615 22:28:05.392" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_login'.</msg>
-<msg timestamp="20220615 22:28:05.392" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
-<msg timestamp="20220615 22:28:05.901" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:05.901" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:05.901" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ae-ffff-ffff000000ba/click {"id": "00000000-0000-01ae-ffff-ffff000000ba"}</msg>
-<msg timestamp="20220615 22:28:05.955" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ae-ffff-ffff000000ba/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20220615 22:28:05.956" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:05.956" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:05.391" endtime="20220615 22:28:05.956"/>
+<msg timestamp="20220616 23:00:10.130" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
+<msg timestamp="20220616 23:00:10.133" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_login'.</msg>
+<msg timestamp="20220616 23:00:10.133" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:10.643" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:10.643" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:10.643" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0200-ffff-ffff000000ba/click {"id": "00000000-0000-0200-ffff-ffff000000ba"}</msg>
+<msg timestamp="20220616 23:00:10.695" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0200-ffff-ffff000000ba/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:10.695" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:10.695" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:10.129" endtime="20220616 23:00:10.695"/>
 </kw>
-<msg timestamp="20220615 22:28:05.956" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:00.311" endtime="20220615 22:28:05.957"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220615 22:28:05.958" level="TRACE">Arguments: [ '5' ]</msg>
-<msg timestamp="20220615 22:28:10.961" level="INFO">Slept 5 seconds</msg>
-<msg timestamp="20220615 22:28:10.961" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:05.957" endtime="20220615 22:28:10.961"/>
-</kw>
-<kw name="Logout" library="android-res">
-<msg timestamp="20220615 22:28:10.962" level="TRACE">Arguments: [  ]</msg>
+<kw name="OpenFragmentLiteratur" library="android-res">
+<msg timestamp="20220616 23:00:10.695" level="TRACE">Arguments: [  ]</msg>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>${ELEMENT_BUTTON_LOGOUT_FRAGMENT_PROFIL}</arg>
+<arg>${ELEMENT_FRAGMEN_LITERATUR}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20220615 22:28:10.962" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_logout' ]</msg>
-<msg timestamp="20220615 22:28:10.962" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/button_logout"}</msg>
-<msg timestamp="20220615 22:28:10.997" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:10.997" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:10.997" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:10.962" endtime="20220615 22:28:10.997"/>
+<msg timestamp="20220616 23:00:10.696" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/literaturFragment' ]</msg>
+<msg timestamp="20220616 23:00:10.696" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:10.766" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:10.766" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:10.969" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:11.262" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:11.262" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:11.468" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:12.040" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:12.040" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:12.243" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:12.619" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:12.619" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:12.619" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:10.695" endtime="20220616 23:00:12.619"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>${ELEMENT_BUTTON_LOGOUT_FRAGMENT_PROFIL}</arg>
+<arg>${ELEMENT_FRAGMEN_LITERATUR}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220615 22:28:10.998" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_logout' ]</msg>
-<msg timestamp="20220615 22:28:10.999" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_logout'.</msg>
-<msg timestamp="20220615 22:28:10.999" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements {"using": "id", "value": "id.del.ac.delstat:id/button_logout"}</msg>
-<msg timestamp="20220615 22:28:11.041" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220615 22:28:11.041" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:11.041" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ad-ffff-ffff0000008a/click {"id": "00000000-0000-01ad-ffff-ffff0000008a"}</msg>
-<msg timestamp="20220615 22:28:11.086" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5b8df3fa-b443-4718-b1cf-2618da7c69e8/element/00000000-0000-01ad-ffff-ffff0000008a/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20220615 22:28:11.088" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220615 22:28:11.088" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:10.997" endtime="20220615 22:28:11.088"/>
+<msg timestamp="20220616 23:00:12.620" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/literaturFragment' ]</msg>
+<msg timestamp="20220616 23:00:12.622" level="INFO">Clicking element 'id=id.del.ac.delstat:id/literaturFragment'.</msg>
+<msg timestamp="20220616 23:00:12.622" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:12.652" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:12.652" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:12.652" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-01ff-ffff-ffff0000004f/click {"id": "00000000-0000-01ff-ffff-ffff0000004f"}</msg>
+<msg timestamp="20220616 23:00:12.686" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-01ff-ffff-ffff0000004f/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:12.686" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:12.686" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:12.619" endtime="20220616 23:00:12.686"/>
 </kw>
-<msg timestamp="20220615 22:28:11.088" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220615 22:28:10.962" endtime="20220615 22:28:11.088"/>
+<msg timestamp="20220616 23:00:12.686" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:10.695" endtime="20220616 23:00:12.686"/>
 </kw>
-<status status="PASS" starttime="20220615 22:27:45.710" endtime="20220615 22:28:11.089"/>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_TAMBAH_LITERATUR_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:12.688" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_add_literatur' ]</msg>
+<msg timestamp="20220616 23:00:12.688" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/button_add_literatur"}</msg>
+<msg timestamp="20220616 23:00:12.841" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:12.841" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:13.056" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/button_add_literatur"}</msg>
+<msg timestamp="20220616 23:00:14.098" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:14.098" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:14.098" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:12.686" endtime="20220616 23:00:14.099"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_TAMBAH_LITERATUR_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:14.099" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_add_literatur' ]</msg>
+<msg timestamp="20220616 23:00:14.101" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_add_literatur'.</msg>
+<msg timestamp="20220616 23:00:14.101" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/button_add_literatur"}</msg>
+<msg timestamp="20220616 23:00:14.135" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:14.135" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:14.135" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-01ff-ffff-ffff000000d0/click {"id": "00000000-0000-01ff-ffff-ffff000000d0"}</msg>
+<msg timestamp="20220616 23:00:14.174" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-01ff-ffff-ffff000000d0/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:14.174" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:14.174" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:14.099" endtime="20220616 23:00:14.174"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_JUDUL_LITERATUR_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:14.174" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_judul' ]</msg>
+<msg timestamp="20220616 23:00:14.175" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_judul"}</msg>
+<msg timestamp="20220616 23:00:14.364" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:14.365" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:14.580" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_judul"}</msg>
+<msg timestamp="20220616 23:00:15.086" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:15.086" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:15.086" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:14.174" endtime="20220616 23:00:15.086"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${ELEMENT_JUDUL_LITERATUR_ACTIVITY}</arg>
+<arg>${JUDUL_LITERATUR}[judul]</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:15.087" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_judul' | 'Probabilitas Sederhana' ]</msg>
+<msg timestamp="20220616 23:00:15.089" level="INFO">Typing text 'Probabilitas Sederhana' into text field 'id=id.del.ac.delstat:id/edit_text_judul'</msg>
+<msg timestamp="20220616 23:00:15.089" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_judul"}</msg>
+<msg timestamp="20220616 23:00:15.114" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:15.114" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:15.115" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff000000ed/value {"text": "Probabilitas Sederhana", "value": ["P", "r", "o", "b", "a", "b", "i", "l", "i", "t", "a", "s", " ", "S", "e", "d", "e", "r", "h", "a", "n", "a"], "id": "00000000-0000-0201-ffff-ffff000000ed"}</msg>
+<msg timestamp="20220616 23:00:15.756" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff000000ed/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:15.756" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:15.756" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:15.086" endtime="20220616 23:00:15.756"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${ELEMENT_PENULIS_LITERATUR_ACTIVITY}</arg>
+<arg>${PENULIS_LITERATUR}[penulis]</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:15.757" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_penulis' | 'Rinaldi Munir' ]</msg>
+<msg timestamp="20220616 23:00:15.761" level="INFO">Typing text 'Rinaldi Munir' into text field 'id=id.del.ac.delstat:id/edit_text_penulis'</msg>
+<msg timestamp="20220616 23:00:15.761" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_penulis"}</msg>
+<msg timestamp="20220616 23:00:16.267" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:16.267" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:16.267" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff000000fb/value {"text": "Rinaldi Munir", "value": ["R", "i", "n", "a", "l", "d", "i", " ", "M", "u", "n", "i", "r"], "id": "00000000-0000-0201-ffff-ffff000000fb"}</msg>
+<msg timestamp="20220616 23:00:16.900" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff000000fb/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:16.901" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:16.901" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:15.757" endtime="20220616 23:00:16.901"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${ELEMENT_TAHUN_LITERATUR_ACTIVITY}</arg>
+<arg>${TAHUN_LITERATUR}[tahun]</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:16.901" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_tahun_terbit' | '2020' ]</msg>
+<msg timestamp="20220616 23:00:16.903" level="INFO">Typing text '2020' into text field 'id=id.del.ac.delstat:id/edit_text_tahun_terbit'</msg>
+<msg timestamp="20220616 23:00:16.903" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_tahun_terbit"}</msg>
+<msg timestamp="20220616 23:00:17.408" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:17.409" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:17.409" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff00000109/value {"text": "2020", "value": ["2", "0", "2", "0"], "id": "00000000-0000-0201-ffff-ffff00000109"}</msg>
+<msg timestamp="20220616 23:00:18.036" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff00000109/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:18.037" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:18.037" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:16.901" endtime="20220616 23:00:18.037"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${ELEMENT_TAG_LITERATUR_ACTIVITY}</arg>
+<arg>${TAG_LITERATUR}[tag]</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:18.037" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_tags' | 'mahasiswa' ]</msg>
+<msg timestamp="20220616 23:00:18.039" level="INFO">Typing text 'mahasiswa' into text field 'id=id.del.ac.delstat:id/edit_text_tags'</msg>
+<msg timestamp="20220616 23:00:18.039" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_tags"}</msg>
+<msg timestamp="20220616 23:00:18.551" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:18.551" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:18.551" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff00000117/value {"text": "mahasiswa", "value": ["m", "a", "h", "a", "s", "i", "s", "w", "a"], "id": "00000000-0000-0201-ffff-ffff00000117"}</msg>
+<msg timestamp="20220616 23:00:19.184" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff00000117/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:19.184" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:19.184" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:18.037" endtime="20220616 23:00:19.184"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${ELEMENT_FILE_LITERATUR_ACTIVITY}</arg>
+<arg>${FILE_LITERATUR}[file]</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:19.185" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/input_file' | '' ]</msg>
+<msg timestamp="20220616 23:00:19.187" level="INFO">Typing text '' into text field 'id=id.del.ac.delstat:id/input_file'</msg>
+<msg timestamp="20220616 23:00:19.187" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/input_file"}</msg>
+<msg timestamp="20220616 23:00:19.698" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:19.699" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:19.699" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff00000125/value {"text": "", "value": [], "id": "00000000-0000-0201-ffff-ffff00000125"}</msg>
+<msg timestamp="20220616 23:00:20.224" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff00000125/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:20.225" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:20.225" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:19.184" endtime="20220616 23:00:20.225"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_CREATE_LITERATUR_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:20.225" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_create_literatur' ]</msg>
+<msg timestamp="20220616 23:00:20.227" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_create_literatur'.</msg>
+<msg timestamp="20220616 23:00:20.227" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements {"using": "id", "value": "id.del.ac.delstat:id/button_create_literatur"}</msg>
+<msg timestamp="20220616 23:00:20.256" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:20.256" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:20.256" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff00000131/click {"id": "00000000-0000-0201-ffff-ffff00000131"}</msg>
+<msg timestamp="20220616 23:00:20.755" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/5002469d-ce02-455e-a748-21dfd9518e63/element/00000000-0000-0201-ffff-ffff00000131/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:20.755" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:20.755" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:20.225" endtime="20220616 23:00:20.756"/>
+</kw>
+<msg timestamp="20220616 23:00:20.756" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:05.645" endtime="20220616 23:00:20.756"/>
+</kw>
+<status status="PASS" starttime="20220616 22:59:55.811" endtime="20220616 23:00:20.756"/>
 </test>
-<status status="PASS" starttime="20220615 22:27:45.491" endtime="20220615 22:28:11.090"/>
+<test id="s1-t3" name="Edit" line="16">
+<kw name="OpenDelStatApplication" library="android-res">
+<msg timestamp="20220616 23:00:20.759" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=id.del.ac.delstat</arg>
+<arg>appActivity=id.del.ac.delstat.presentation.activity.HomeActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20220616 23:00:20.759" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='emulator-5554' | appPackage='id.del.ac.delstat' | appActivity='id.del.ac.delstat.presentation.activity.HomeActivity' | automationName='Uiautomator2' ]</msg>
+<msg timestamp="20220616 23:00:22.813" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "id.del.ac.delstat", "appium:appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "emulator-5554", "appPackage": "id.del.ac.delstat", "appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "automationName": "Uiautomator2"}}</msg>
+<msg timestamp="20220616 23:00:22.813" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20220616 23:00:30.417" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 950</msg>
+<msg timestamp="20220616 23:00:30.417" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:30.420" level="DEBUG">Opened application with session id de09d939-860c-44f5-8b77-4b9182146f47</msg>
+<msg timestamp="20220616 23:00:30.420" level="TRACE">Return: 3</msg>
+<status status="PASS" starttime="20220616 23:00:20.759" endtime="20220616 23:00:30.420"/>
+</kw>
+<msg timestamp="20220616 23:00:30.420" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:20.758" endtime="20220616 23:00:30.420"/>
+</kw>
+<kw name="EditLiteratur" library="android-res">
+<msg timestamp="20220616 23:00:30.421" level="TRACE">Arguments: [  ]</msg>
+<kw name="OpenFragmentProfil" library="android-res">
+<msg timestamp="20220616 23:00:30.421" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_FRAGMEN_PROFIL}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:30.422" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/profileFragment' ]</msg>
+<msg timestamp="20220616 23:00:30.422" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/profileFragment"}</msg>
+<msg timestamp="20220616 23:00:31.481" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:31.481" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:31.481" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:30.422" endtime="20220616 23:00:31.481"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_FRAGMEN_PROFIL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:31.482" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/profileFragment' ]</msg>
+<msg timestamp="20220616 23:00:31.484" level="INFO">Clicking element 'id=id.del.ac.delstat:id/profileFragment'.</msg>
+<msg timestamp="20220616 23:00:31.484" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/profileFragment"}</msg>
+<msg timestamp="20220616 23:00:31.536" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:31.536" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:31.536" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020d-ffff-ffff0000005d/click {"id": "00000000-0000-020d-ffff-ffff0000005d"}</msg>
+<msg timestamp="20220616 23:00:31.591" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020d-ffff-ffff0000005d/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:31.592" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:31.592" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:31.481" endtime="20220616 23:00:31.592"/>
+</kw>
+<msg timestamp="20220616 23:00:31.592" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:30.421" endtime="20220616 23:00:31.592"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:31.592" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
+<msg timestamp="20220616 23:00:31.592" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:31.785" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:31.786" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:31.991" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:32.514" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:32.515" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:32.515" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:31.592" endtime="20220616 23:00:32.515"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:32.515" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
+<msg timestamp="20220616 23:00:32.517" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_login'.</msg>
+<msg timestamp="20220616 23:00:32.518" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:32.551" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:32.551" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:32.551" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020d-ffff-ffff00000074/click {"id": "00000000-0000-020d-ffff-ffff00000074"}</msg>
+<msg timestamp="20220616 23:00:32.590" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020d-ffff-ffff00000074/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:32.590" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:32.590" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:32.515" endtime="20220616 23:00:32.590"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_EMAIL_LOGIN_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:32.591" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_email_login' ]</msg>
+<msg timestamp="20220616 23:00:32.591" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
+<msg timestamp="20220616 23:00:32.648" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:32.648" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:32.862" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
+<msg timestamp="20220616 23:00:33.656" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:33.657" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:33.657" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:32.590" endtime="20220616 23:00:33.657"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${ELEMENT_EMAIL_LOGIN_ACTIVITY}</arg>
+<arg>${USER_DOSEN_1}[email]</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:33.657" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_email_login' | 'dosen1@gmail.com' ]</msg>
+<msg timestamp="20220616 23:00:33.660" level="INFO">Typing text 'dosen1@gmail.com' into text field 'id=id.del.ac.delstat:id/edit_text_email_login'</msg>
+<msg timestamp="20220616 23:00:33.660" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
+<msg timestamp="20220616 23:00:33.686" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:33.687" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:33.687" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020e-ffff-ffff000000a0/value {"text": "dosen1@gmail.com", "value": ["d", "o", "s", "e", "n", "1", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "00000000-0000-020e-ffff-ffff000000a0"}</msg>
+<msg timestamp="20220616 23:00:34.327" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020e-ffff-ffff000000a0/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:34.327" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:34.327" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:33.657" endtime="20220616 23:00:34.327"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>${ELEMENT_PASSWORD_LOGIN_ACTIVITY}</arg>
+<arg>${USER_DOSEN_1}[password]</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:34.328" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_password_login' | '12345678' ]</msg>
+<msg timestamp="20220616 23:00:34.332" level="INFO">Typing password into text field 'id=id.del.ac.delstat:id/edit_text_password_login'</msg>
+<msg timestamp="20220616 23:00:34.332" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_password_login"}</msg>
+<msg timestamp="20220616 23:00:34.841" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:34.842" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:34.842" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020e-ffff-ffff000000ae/value {"text": "12345678", "value": ["1", "2", "3", "4", "5", "6", "7", "8"], "id": "00000000-0000-020e-ffff-ffff000000ae"}</msg>
+<msg timestamp="20220616 23:00:34.899" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020e-ffff-ffff000000ae/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:34.900" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:34.900" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:34.328" endtime="20220616 23:00:34.900"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_LOGIN_LOGIN_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:34.900" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
+<msg timestamp="20220616 23:00:34.903" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_login'.</msg>
+<msg timestamp="20220616 23:00:34.903" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:35.416" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:35.416" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:35.416" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020e-ffff-ffff000000ba/click {"id": "00000000-0000-020e-ffff-ffff000000ba"}</msg>
+<msg timestamp="20220616 23:00:35.459" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020e-ffff-ffff000000ba/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:35.459" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:35.459" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:34.900" endtime="20220616 23:00:35.459"/>
+</kw>
+<kw name="OpenFragmentLiteratur" library="android-res">
+<msg timestamp="20220616 23:00:35.460" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_FRAGMEN_LITERATUR}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:35.460" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/literaturFragment' ]</msg>
+<msg timestamp="20220616 23:00:35.460" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:35.526" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:35.526" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:35.742" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:36.033" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:36.034" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:36.240" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:36.857" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:36.858" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:37.064" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:37.419" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:37.419" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:37.419" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:35.460" endtime="20220616 23:00:37.419"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_FRAGMEN_LITERATUR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:37.419" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/literaturFragment' ]</msg>
+<msg timestamp="20220616 23:00:37.422" level="INFO">Clicking element 'id=id.del.ac.delstat:id/literaturFragment'.</msg>
+<msg timestamp="20220616 23:00:37.422" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/literaturFragment"}</msg>
+<msg timestamp="20220616 23:00:37.456" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:37.457" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:37.457" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020d-ffff-ffff0000004f/click {"id": "00000000-0000-020d-ffff-ffff0000004f"}</msg>
+<msg timestamp="20220616 23:00:37.508" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020d-ffff-ffff0000004f/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:37.508" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:37.509" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:37.419" endtime="20220616 23:00:37.509"/>
+</kw>
+<msg timestamp="20220616 23:00:37.509" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:35.460" endtime="20220616 23:00:37.509"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_LITERATUR1_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:37.510" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/judul_literatur' ]</msg>
+<msg timestamp="20220616 23:00:37.510" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/judul_literatur"}</msg>
+<msg timestamp="20220616 23:00:37.923" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:37.923" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:38.123" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/judul_literatur"}</msg>
+<msg timestamp="20220616 23:00:38.986" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:38.987" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:38.987" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:37.510" endtime="20220616 23:00:38.987"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_LITERATUR1_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:38.987" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/judul_literatur' ]</msg>
+<msg timestamp="20220616 23:00:38.989" level="INFO">Clicking element 'id=id.del.ac.delstat:id/judul_literatur'.</msg>
+<msg timestamp="20220616 23:00:38.990" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/judul_literatur"}</msg>
+<msg timestamp="20220616 23:00:39.016" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:39.016" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:39.016" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020d-ffff-ffff000000e2/click {"id": "00000000-0000-020d-ffff-ffff000000e2"}</msg>
+<msg timestamp="20220616 23:00:39.056" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020d-ffff-ffff000000e2/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:39.057" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:39.057" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:38.987" endtime="20220616 23:00:39.057"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_ICON_EDIT_LITERATUR_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:39.057" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/editLiteratur' ]</msg>
+<msg timestamp="20220616 23:00:39.057" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/editLiteratur"}</msg>
+<msg timestamp="20220616 23:00:39.298" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:39.298" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:39.512" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/editLiteratur"}</msg>
+<msg timestamp="20220616 23:00:40.105" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:40.105" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:40.105" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:39.057" endtime="20220616 23:00:40.105"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_ICON_EDIT_LITERATUR_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:40.106" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/editLiteratur' ]</msg>
+<msg timestamp="20220616 23:00:40.109" level="INFO">Clicking element 'id=id.del.ac.delstat:id/editLiteratur'.</msg>
+<msg timestamp="20220616 23:00:40.109" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/editLiteratur"}</msg>
+<msg timestamp="20220616 23:00:40.140" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:40.141" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:40.141" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020f-ffff-ffff00000140/click {"id": "00000000-0000-020f-ffff-ffff00000140"}</msg>
+<msg timestamp="20220616 23:00:40.200" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020f-ffff-ffff00000140/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:40.200" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:40.200" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:40.106" endtime="20220616 23:00:40.200"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_JUDUL_LITERATUR_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:40.201" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_judul' ]</msg>
+<msg timestamp="20220616 23:00:40.201" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_judul"}</msg>
+<msg timestamp="20220616 23:00:40.250" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:40.250" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:40.250" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:40.201" endtime="20220616 23:00:40.250"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${ELEMENT_TAHUN_LITERATUR_ACTIVITY}</arg>
+<arg>${TAHUN_LITERATUR}[tahun2]</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:40.251" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_tahun_terbit' | '2021' ]</msg>
+<msg timestamp="20220616 23:00:40.254" level="INFO">Typing text '2021' into text field 'id=id.del.ac.delstat:id/edit_text_tahun_terbit'</msg>
+<msg timestamp="20220616 23:00:40.254" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_tahun_terbit"}</msg>
+<msg timestamp="20220616 23:00:40.824" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:40.824" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:40.824" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020f-ffff-ffff00000109/value {"text": "2021", "value": ["2", "0", "2", "1"], "id": "00000000-0000-020f-ffff-ffff00000109"}</msg>
+<msg timestamp="20220616 23:00:41.468" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020f-ffff-ffff00000109/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:41.468" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:41.468" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:40.251" endtime="20220616 23:00:41.468"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_EDIT_LITERATUR_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:41.469" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_edit_literatur' ]</msg>
+<msg timestamp="20220616 23:00:41.471" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_edit_literatur'.</msg>
+<msg timestamp="20220616 23:00:41.471" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements {"using": "id", "value": "id.del.ac.delstat:id/button_edit_literatur"}</msg>
+<msg timestamp="20220616 23:00:41.985" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:41.985" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:41.985" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020f-ffff-ffff00000137/click {"id": "00000000-0000-020f-ffff-ffff00000137"}</msg>
+<msg timestamp="20220616 23:00:42.023" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/de09d939-860c-44f5-8b77-4b9182146f47/element/00000000-0000-020f-ffff-ffff00000137/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:42.023" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:42.024" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:41.468" endtime="20220616 23:00:42.024"/>
+</kw>
+<msg timestamp="20220616 23:00:42.024" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:30.421" endtime="20220616 23:00:42.024"/>
+</kw>
+<status status="PASS" starttime="20220616 23:00:20.758" endtime="20220616 23:00:42.024"/>
+</test>
+<test id="s1-t4" name="Delete" line="20">
+<kw name="OpenDelStatApplication" library="android-res">
+<msg timestamp="20220616 23:00:42.027" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=id.del.ac.delstat</arg>
+<arg>appActivity=id.del.ac.delstat.presentation.activity.HomeActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20220616 23:00:42.027" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='emulator-5554' | appPackage='id.del.ac.delstat' | appActivity='id.del.ac.delstat.presentation.activity.HomeActivity' | automationName='Uiautomator2' ]</msg>
+<msg timestamp="20220616 23:00:44.077" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "id.del.ac.delstat", "appium:appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "emulator-5554", "appPackage": "id.del.ac.delstat", "appActivity": "id.del.ac.delstat.presentation.activity.HomeActivity", "automationName": "Uiautomator2"}}</msg>
+<msg timestamp="20220616 23:00:44.078" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20220616 23:00:51.832" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 950</msg>
+<msg timestamp="20220616 23:00:51.832" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:51.835" level="DEBUG">Opened application with session id 0d464402-cca3-4dd4-9e17-e70465fd3a5e</msg>
+<msg timestamp="20220616 23:00:51.835" level="TRACE">Return: 4</msg>
+<status status="PASS" starttime="20220616 23:00:42.027" endtime="20220616 23:00:51.835"/>
+</kw>
+<msg timestamp="20220616 23:00:51.835" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:42.026" endtime="20220616 23:00:51.835"/>
+</kw>
+<kw name=" DeleteLiteratur" library="android-res">
+<msg timestamp="20220616 23:00:51.836" level="TRACE">Arguments: [  ]</msg>
+<kw name="OpenFragmentProfil" library="android-res">
+<msg timestamp="20220616 23:00:51.836" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_FRAGMEN_PROFIL}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:51.837" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/profileFragment' ]</msg>
+<msg timestamp="20220616 23:00:51.837" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements {"using": "id", "value": "id.del.ac.delstat:id/profileFragment"}</msg>
+<msg timestamp="20220616 23:00:52.911" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:52.911" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:52.911" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:51.837" endtime="20220616 23:00:52.911"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_FRAGMEN_PROFIL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:52.912" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/profileFragment' ]</msg>
+<msg timestamp="20220616 23:00:52.914" level="INFO">Clicking element 'id=id.del.ac.delstat:id/profileFragment'.</msg>
+<msg timestamp="20220616 23:00:52.914" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements {"using": "id", "value": "id.del.ac.delstat:id/profileFragment"}</msg>
+<msg timestamp="20220616 23:00:52.972" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:52.972" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:52.972" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/element/00000000-0000-021b-ffff-ffff0000005d/click {"id": "00000000-0000-021b-ffff-ffff0000005d"}</msg>
+<msg timestamp="20220616 23:00:53.024" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/element/00000000-0000-021b-ffff-ffff0000005d/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:53.024" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:53.024" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:52.911" endtime="20220616 23:00:53.024"/>
+</kw>
+<msg timestamp="20220616 23:00:53.024" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:51.836" endtime="20220616 23:00:53.024"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:53.025" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
+<msg timestamp="20220616 23:00:53.025" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:53.230" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:53.231" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:53.444" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:53.947" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:53.947" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:53.947" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:53.024" endtime="20220616 23:00:53.947"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_LOGIN_FRAGMENT_PROFIL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:53.948" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/button_login' ]</msg>
+<msg timestamp="20220616 23:00:53.950" level="INFO">Clicking element 'id=id.del.ac.delstat:id/button_login'.</msg>
+<msg timestamp="20220616 23:00:53.950" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements {"using": "id", "value": "id.del.ac.delstat:id/button_login"}</msg>
+<msg timestamp="20220616 23:00:53.982" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:53.983" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:53.983" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/element/00000000-0000-021b-ffff-ffff00000074/click {"id": "00000000-0000-021b-ffff-ffff00000074"}</msg>
+<msg timestamp="20220616 23:00:54.046" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/element/00000000-0000-021b-ffff-ffff00000074/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:54.047" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:54.047" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:53.947" endtime="20220616 23:00:54.047"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_EMAIL_LOGIN_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220616 23:00:54.047" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_email_login' ]</msg>
+<msg timestamp="20220616 23:00:54.047" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
+<msg timestamp="20220616 23:00:55.065" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:55.065" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:55.065" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:54.047" endtime="20220616 23:00:55.065"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${ELEMENT_EMAIL_LOGIN_ACTIVITY}</arg>
+<arg>${USER_DOSEN_1}[email]</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:55.065" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_email_login' | 'dosen1@gmail.com' ]</msg>
+<msg timestamp="20220616 23:00:55.067" level="INFO">Typing text 'dosen1@gmail.com' into text field 'id=id.del.ac.delstat:id/edit_text_email_login'</msg>
+<msg timestamp="20220616 23:00:55.068" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_email_login"}</msg>
+<msg timestamp="20220616 23:00:55.092" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220616 23:00:55.092" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:55.092" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/element/00000000-0000-021c-ffff-ffff000000a0/value {"text": "dosen1@gmail.com", "value": ["d", "o", "s", "e", "n", "1", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "00000000-0000-021c-ffff-ffff000000a0"}</msg>
+<msg timestamp="20220616 23:00:55.735" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/element/00000000-0000-021c-ffff-ffff000000a0/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220616 23:00:55.735" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:55.735" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220616 23:00:55.065" endtime="20220616 23:00:55.735"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>${ELEMENT_PASSWORD_LOGIN_ACTIVITY}</arg>
+<arg>${USER_DOSEN_1}[password]</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20220616 23:00:55.736" level="TRACE">Arguments: [ 'id=id.del.ac.delstat:id/edit_text_password_login' | '12345678' ]</msg>
+<msg timestamp="20220616 23:00:55.738" level="INFO">Typing password into text field 'id=id.del.ac.delstat:id/edit_text_password_login'</msg>
+<msg timestamp="20220616 23:00:55.738" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements {"using": "id", "value": "id.del.ac.delstat:id/edit_text_password_login"}</msg>
+<msg timestamp="20220616 23:00:56.455" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220616 23:00:56.456" level="DEBUG">Finished Request</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220616 23:00:56.456" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220616 23:00:56.457" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/screenshot {}</msg>
+<msg timestamp="20220616 23:00:57.029" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/0d464402-cca3-4dd4-9e17-e70465fd3a5e/screenshot HTTP/1.1" 200 879992</msg>
+<msg timestamp="20220616 23:00:57.034" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220616 23:00:57.038" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220616 23:00:57.039" level="TRACE">Return: 'D:\\Del\\A-Kuliah\\A-Semester4\\Proyek Akhir II\\Code\\DelStat-Testing\\Output\\appium-screenshot-1.png'</msg>
+<status status="PASS" starttime="20220616 23:00:56.456" endtime="20220616 23:00:57.039"/>
+</kw>
+<msg timestamp="20220616 23:00:57.039" level="FAIL">ValueError: Element locator 'id=id.del.ac.delstat:id/edit_text_password_login' did not match any elements.</msg>
+<msg timestamp="20220616 23:00:57.053" level="DEBUG">Traceback (most recent call last):
+  File "c:\program files\python38\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "c:\program files\python38\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "c:\program files\python38\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "c:\program files\python38\lib\site-packages\AppiumLibrary\keywords\_element.py", line 80, in input_password
+    self._element_input_text_by_locator(locator, text)
+  File "c:\program files\python38\lib\site-packages\AppiumLibrary\keywords\_element.py", line 548, in _element_input_text_by_locator
+    raise e
+  File "c:\program files\python38\lib\site-packages\AppiumLibrary\keywords\_element.py", line 545, in _element_input_text_by_locator
+    element = self._element_find(locator, True, True)
+  File "c:\program files\python38\lib\site-packages\AppiumLibrary\keywords\_element.py", line 576, in _element_find
+    raise ValueError("Element locator '" + locator + "' did not match any elements.")
+ValueError: Element locator 'id=id.del.ac.delstat:id/edit_text_password_login' did not match any elements.</msg>
+<status status="FAIL" starttime="20220616 23:00:55.735" endtime="20220616 23:00:57.053"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_LOGIN_LOGIN_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220616 23:00:57.054" endtime="20220616 23:00:57.054"/>
+</kw>
+<kw name="OpenFragmentLiteratur" library="android-res">
+<status status="NOT RUN" starttime="20220616 23:00:57.054" endtime="20220616 23:00:57.054"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_LITERATUR1_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20220616 23:00:57.054" endtime="20220616 23:00:57.054"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_LITERATUR1_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220616 23:00:57.054" endtime="20220616 23:00:57.054"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_DELETE_LITERATUR_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20220616 23:00:57.054" endtime="20220616 23:00:57.054"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_DELETE_LITERATUR_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220616 23:00:57.054" endtime="20220616 23:00:57.054"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_YES_LITERATUR_ACTIVITY}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20220616 23:00:57.054" endtime="20220616 23:00:57.054"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ELEMENT_BUTTON_YES_LITERATUR_ACTIVITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220616 23:00:57.054" endtime="20220616 23:00:57.054"/>
+</kw>
+<status status="FAIL" starttime="20220616 23:00:51.836" endtime="20220616 23:00:57.055"/>
+</kw>
+<status status="FAIL" starttime="20220616 23:00:42.026" endtime="20220616 23:00:57.056">ValueError: Element locator 'id=id.del.ac.delstat:id/edit_text_password_login' did not match any elements.</status>
+</test>
+<status status="FAIL" starttime="20220616 22:59:42.888" endtime="20220616 23:00:57.057"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="3" fail="1" skip="0" id="s1" name="Literatur">Literatur</stat>
 </suite>
 </statistics>
 <errors>

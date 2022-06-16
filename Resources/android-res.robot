@@ -26,14 +26,14 @@ ${ELEMENT_BUTTON_HASIL_KUIS_FRAGMENT_PROFIL}    id=id.del.ac.delstat:id/button_h
 ${ELEMENT_BUTTON_LOGOUT_FRAGMENT_PROFIL}        id=id.del.ac.delstat:id/button_logout
 
 # Materi Video Link #
-${VIDEO2_LINK}      link=https://www.youtube.com/watch?v=h8Nur-4DAWs
+&{VIDEO2_LINK}      link=https://www.youtube.com/watch?v=h8Nur-4DAWs
 
 #Literatur Inputs
-${JUDUL_LITERATUR}      judul=Probabilitas Sederhana
-${PENULIS_LITERATUR}    penulis=Rinaldi Munir
-${TAHUN_LITERATUR}      tahun=2020  tahun2=2021
-${TAG_LITERATUR}        tag=mahasiswa
-${FILE_LITERATUR}       file=
+&{JUDUL_LITERATUR}      judul=Probabilitas Sederhana
+&{PENULIS_LITERATUR}    penulis=Rinaldi Munir
+&{TAHUN_LITERATUR}      tahun=2020  tahun2=2021
+&{TAG_LITERATUR}        tag=mahasiswa
+&{FILE_LITERATUR}       file=
 
 *** Keywords ***
 OpenDelStatApplication
